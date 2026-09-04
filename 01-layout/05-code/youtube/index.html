@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mockup — Screens</title>
+    <link rel="stylesheet" href="css/youtube.css">
+    <style>
+        .screens-menu {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .screens-menu h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .screens-menu p {
+            color: var(--yt-text-secondary);
+            margin-bottom: 32px;
+        }
+        .screen-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .screen-card {
+            display: block;
+            border-radius: 14px;
+            overflow: hidden;
+            background: var(--yt-bg-elevated);
+            border: 1px solid var(--yt-border);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screen-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--yt-blue);
+        }
+        .screen-card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background: var(--yt-bg-hover);
+        }
+        .screen-card .screen-meta {
+            padding: 14px 16px;
+        }
+        .screen-card .screen-meta strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .screen-card .screen-meta span {
+            font-size: 13px;
+            color: var(--yt-text-secondary);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: var(--yt-blue);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="shell">
+    <header class="header">
+        <div class="header-left">
+            <a class="logo" href="home.html">
+                <svg width="28" height="20" viewBox="0 0 90 20" fill="#ff0000">
+                    <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5701 5.35042 27.9727 3.12324Z"/>
+                    <path fill="#fff" d="M11.4285 14.2857L18.8497 10L11.4285 5.71429V14.2857Z"/>
+                </svg>
+                <span class="logo-text">YouTube<sup>CO</sup></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="screens-menu">
+        <a class="back-link" href="../index.html">&larr; Back to 05-Code</a>
+        <h1>YouTube HI-FI Mockup — 5 Screens</h1>
+        <p>Import each screen into Figma with the <b>html.to.design</b> plugin, at a viewport of 1440x900.</p>
+
+        <div class="screen-list">
+            <a class="screen-card" href="home.html">
+                <img src="https://picsum.photos/seed/home-thumb/640/360" alt="">
+                <div class="screen-meta">
+                    <strong>Home</strong>
+                    <span>Header + sidebar + chips + video grid</span>
+                </div>
+            </a>
+            <a class="screen-card" href="watch.html">
+                <img src="https://picsum.photos/seed/watch-thumb/640/360" alt="">
+                <div class="screen-meta">
+                    <strong>Watch</strong>
+                    <span>Player + actions + comments + up-next rail</span>
+                </div>
+            </a>
+            <a class="screen-card" href="channel.html">
+                <img src="https://picsum.photos/seed/channel-thumb/640/360" alt="">
+                <div class="screen-meta">
+                    <strong>Channel</strong>
+                    <span>Banner + avatar + tabs + video shelves</span>
+                </div>
+            </a>
+            <a class="screen-card" href="search.html">
+                <img src="https://picsum.photos/seed/search-thumb/640/360" alt="">
+                <div class="screen-meta">
+                    <strong>Search</strong>
+                    <span>Filters + result list cards</span>
+                </div>
+            </a>
+            <a class="screen-card" href="shorts.html">
+                <img src="https://picsum.photos/seed/shorts-thumb/640/360" alt="">
+                <div class="screen-meta">
+                    <strong>Shorts</strong>
+                    <span>9:16 player + action rail + up-next shelf</span>
+                </div>
+            </a>
+        </div>
+    </main>
+</div>
+</body>
+</html>

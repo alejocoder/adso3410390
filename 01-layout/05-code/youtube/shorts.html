@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube — Shorts</title>
+    <link rel="stylesheet" href="css/youtube.css">
+</head>
+<body>
+<div class="shell">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-left">
+            <button class="icon-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+            <a class="logo" href="home.html">
+                <svg width="28" height="20" viewBox="0 0 90 20" fill="#ff0000">
+                    <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5701 5.35042 27.9727 3.12324Z"/>
+                    <path fill="#fff" d="M11.4285 14.2857L18.8497 10L11.4285 5.71429V14.2857Z"/>
+                </svg>
+                <span class="logo-text">YouTube<sup>CO</sup></span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <form class="search-form" action="search.html">
+                <input class="search-input" type="text" placeholder="Search" aria-label="Search">
+                <button class="search-btn" type="submit" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+                    </svg>
+                </button>
+            </form>
+            <button class="mic-btn" aria-label="Voice search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5.5-3a5.5 5.5 0 0 1-11 0H5a6.5 6.5 0 0 0 5.5 6.42V20h3v-2.58A6.5 6.5 0 0 0 19 11h-1.5z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <button class="icon-btn" aria-label="Create">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.4 3H5.6A2.6 2.6 0 0 0 3 5.6v12.8A2.6 2.6 0 0 0 5.6 21h12.8a2.6 2.6 0 0 0 2.6-2.6V5.6A2.6 2.6 0 0 0 18.4 3zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4-8h1.5a1 1 0 1 1 0 2H16a1 1 0 1 1 0-2z"/>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Apps">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Notifications">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22a2.2 2.2 0 0 0 2.2-2.2H9.8A2.2 2.2 0 0 0 12 22zm7-5.5v-1l-1-1v-4.9a6 6 0 0 0-5-5.9V3h-2v.7a6 6 0 0 0-5 5.9v4.9l-1 1v1h14z"/>
+                </svg>
+            </button>
+            <img class="avatar" src="https://i.pravatar.cc/150?img=12" alt="Profile">
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="shorts-body">
+
+        <!-- Primary short -->
+        <section class="shorts-player">
+            <img class="shorts-video" src="https://picsum.photos/seed/shorts1/315/560" alt="Short video">
+            <div class="shorts-caption">
+                <h1 class="shorts-title">POV: you finally understand Auto Layout in Figma!</h1>
+                <div class="shorts-channel">
+                    <img class="ch-avatar" src="https://i.pravatar.cc/150?img=32" alt="">
+                    @figmaweekly
+                </div>
+                <p class="shorts-desc">Wait for the last frame... this is the tutorial that changes everything for designers.</p>
+            </div>
+        </section>
+
+        <!-- Action rail -->
+        <aside class="shorts-rail">
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-9.5A2.5 2.5 0 0 0 19.5 8h-5.8l.9-4.6a1.6 1.6 0 0 0-1.6-1.9L12 1 5.4 8.6A2 2 0 0 0 5 10v8a2 2 0 0 0 2 2h10.5a2.5 2.5 0 0 0 2.5-2 2.5 2.5 0 0 0 .8-1.8V10.5z"/></svg>
+                </span>
+                248K
+            </div>
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4h-4v11h4V4zM16 13.5 9.6 21a1.6 1.6 0 0 1-2-.3 1.7 1.7 0 0 1-.4-1.7l1-4.4a.5.5 0 0 0-.5-.6H2.5A2.5 2.5 0 0 1 0 12a2 2 0 0 1 .3-1.1L4.3 3a2 2 0 0 1 1.7-1h8.5A2.5 2.5 0 0 1 17 4.5V14a2 2 0 0 1-.5 1.3 2 2 0 0 1-.5-.8z"/></svg>
+                </span>
+                8.4K
+            </div>
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 10.8V5.5a2.5 2.5 0 0 1 5 0v4.4a2.5 2.5 0 0 1 5 0v5.6l-2 5H8.5a3 3 0 0 1-2.7-1.7L4 14.5a2 2 0 0 1 1.9-2.9H8v-.8z"/></svg>
+                </span>
+                4,219
+            </div>
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 10v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V10L12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                </span>
+                Share
+            </div>
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 4.6 6 4l-1 3.5L2 9l2 3-2 3 3 1.5L6 20l3.5-1 2.5 3 2.5-3 3.5 1 1-3.5 3-1.5-2-3 2-3-3-1.5L18 4l-3.5.6L12 2z"/></svg>
+                </span>
+                Remix
+            </div>
+            <div class="shorts-action">
+                <span class="circle">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                </span>
+            </div>
+        </aside>
+
+        <!-- Up next shelf -->
+        <aside class="shorts-shelf">
+            <h3 class="shorts-shelf-title">Up next</h3>
+
+            <a class="shorts-shelf-card" href="shorts.html">
+                <img src="https://picsum.photos/seed/shorts2/168/299" alt="">
+                <span class="shelf-title">Stop using frames for everything #shorts</span>
+            </a>
+            <a class="shorts-shelf-card" href="shorts.html">
+                <img src="https://picsum.photos/seed/shorts3/168/299" alt="">
+                <span class="shelf-title">Figma tip: components in 30 seconds</span>
+            </a>
+            <a class="shorts-shelf-card" href="shorts.html">
+                <img src="https://picsum.photos/seed/shorts4/168/299" alt="">
+                <span class="shelf-title">Before you use Figma AI watch this</span>
+            </a>
+            <a class="shorts-shelf-card" href="shorts.html">
+                <img src="https://picsum.photos/seed/shorts5/168/299" alt="">
+                <span class="shelf-title">Auto Layout shortcuts you don't know</span>
+            </a>
+        </aside>
+    </main>
+</div>
+</body>
+</html>

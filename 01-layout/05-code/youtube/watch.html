@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube — Watch</title>
+    <link rel="stylesheet" href="css/youtube.css">
+</head>
+<body>
+<div class="shell">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-left">
+            <button class="icon-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+            <a class="logo" href="home.html">
+                <svg width="28" height="20" viewBox="0 0 90 20" fill="#ff0000">
+                    <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5701 5.35042 27.9727 3.12324Z"/>
+                    <path fill="#fff" d="M11.4285 14.2857L18.8497 10L11.4285 5.71429V14.2857Z"/>
+                </svg>
+                <span class="logo-text">YouTube<sup>CO</sup></span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <form class="search-form" action="search.html">
+                <input class="search-input" type="text" placeholder="Search" aria-label="Search">
+                <button class="search-btn" type="submit" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+                    </svg>
+                </button>
+            </form>
+            <button class="mic-btn" aria-label="Voice search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5.5-3a5.5 5.5 0 0 1-11 0H5a6.5 6.5 0 0 0 5.5 6.42V20h3v-2.58A6.5 6.5 0 0 0 19 11h-1.5z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <button class="icon-btn" aria-label="Create">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.4 3H5.6A2.6 2.6 0 0 0 3 5.6v12.8A2.6 2.6 0 0 0 5.6 21h12.8a2.6 2.6 0 0 0 2.6-2.6V5.6A2.6 2.6 0 0 0 18.4 3zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4-8h1.5a1 1 0 1 1 0 2H16a1 1 0 1 1 0-2z"/>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Apps">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Notifications">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22a2.2 2.2 0 0 0 2.2-2.2H9.8A2.2 2.2 0 0 0 12 22zm7-5.5v-1l-1-1v-4.9a6 6 0 0 0-5-5.9V3h-2v.7a6 6 0 0 0-5 5.9v4.9l-1 1v1h14z"/>
+                </svg>
+            </button>
+            <img class="avatar" src="https://i.pravatar.cc/150?img=12" alt="Profile">
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="watch-layout">
+        <!-- LEFT COLUMN -->
+        <section class="watch-column">
+            <div class="player">
+                <img src="https://picsum.photos/seed/figma1/1280/720" alt="Video frame">
+                <div class="player-overlay">
+                    <div class="play-circle">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="watch-title">Figma Tutorial: Design a Modern Dashboard in 30 Minutes</h1>
+
+            <div class="watch-meta">
+                <span class="watch-stats">1,234,567 views &nbsp;•&nbsp; Feb 14, 2026</span>
+                <div class="action-row">
+                    <button class="action-btn like">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-9.5A2.5 2.5 0 0 0 19.5 8h-5.8l.9-4.6a1.6 1.6 0 0 0-1.6-1.9L12 1 5.4 8.6A2 2 0 0 0 5 10v8a2 2 0 0 0 2 2h10.5a2.5 2.5 0 0 0 2.5-2 2.5 2.5 0 0 0 .8-1.8V10.5z"/></svg>
+                        125K
+                    </button>
+                    <button class="action-btn dislike">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4h-4v11h4V4zM16 13.5 9.6 21a1.6 1.6 0 0 1-2-.3 1.7 1.7 0 0 1-.4-1.7l1-4.4a.5.5 0 0 0-.5-.6H2.5A2.5 2.5 0 0 1 0 12a2 2 0 0 1 .3-1.1L4.3 3a2 2 0 0 1 1.7-1h8.5A2.5 2.5 0 0 1 17 4.5V14a2 2 0 0 1-.5 1.3 2 2 0 0 1-.5-.8z"/></svg>
+                        3.2K
+                    </button>
+                    <button class="action-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 10v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V10L12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                        Share
+                    </button>
+                    <button class="action-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V5l7 7-7 7v-4.1C7 14.9 3.5 17 2 20c1-6 4-10.2 12-11z"/></svg>
+                        Remix
+                    </button>
+                    <button class="action-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h4z"/></svg>
+                        Save
+                    </button>
+                    <button class="icon-btn" aria-label="More">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="channel-bar">
+                <img class="ch-avatar" src="https://i.pravatar.cc/150?img=32" alt="Channel avatar">
+                <div>
+                    <div class="channel-name">Figma Weekly</div>
+                    <div class="channel-sub">1.8M subscribers</div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="description">
+                <div class="desc-meta">134,216 views &nbsp;•&nbsp; Feb 14, 2026</div>
+                <p>In this 30-minute crash course you'll build a complete modern dashboard in Figma using Auto Layout, variables, and components. Perfect for designers who want to level up their workflow.</p>
+                <p style="margin-top:8px"><b>Chapters:</b> 00:00 Intro · 01:24 Setup · 05:10 Auto Layout · 12:40 Components · 20:15 Variables · 27:30 Export</p>
+            </div>
+
+            <div class="comments-header">
+                <span class="comments-count">1,245 Comments</span>
+                <button class="comments-sort">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+                    Sort by
+                </button>
+            </div>
+
+            <div class="comment">
+                <img class="ch-avatar" src="https://i.pravatar.cc/150?img=5" alt="">
+                <div>
+                    <div class="comment-author"><span class="name">Laura Designs</span><span class="time">3 days ago</span></div>
+                    <p class="comment-text">This tutorial saved my career! I recreated the dashboard for my portfolio and got hired the next week. Thank you Figma Weekly!</p>
+                    <div class="comment-actions">
+                        <button>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-9.5A2.5 2.5 0 0 0 19.5 8h-5.8l.9-4.6a1.6 1.6 0 0 0-1.6-1.9L12 1 5.4 8.6A2 2 0 0 0 5 10v8a2 2 0 0 0 2 2h10.5a2.5 2.5 0 0 0 2.5-2 2.5 2.5 0 0 0 .8-1.8V10.5z"/></svg>
+                            1.2K
+                        </button>
+                        <button>Reply</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <img class="ch-avatar" src="https://i.pravatar.cc/150?img=9" alt="">
+                <div>
+                    <div class="comment-author"><span class="name">Carlos M</span><span class="time">2 days ago</span></div>
+                    <p class="comment-text">The part about variables at 20:15 was mind-blowing. I had no idea you could do that. More content like this please!</p>
+                    <div class="comment-actions">
+                        <button>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-9.5A2.5 2.5 0 0 0 19.5 8h-5.8l.9-4.6a1.6 1.6 0 0 0-1.6-1.9L12 1 5.4 8.6A2 2 0 0 0 5 10v8a2 2 0 0 0 2 2h10.5a2.5 2.5 0 0 0 2.5-2 2.5 2.5 0 0 0 .8-1.8V10.5z"/></svg>
+                            854
+                        </button>
+                        <button>Reply</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <img class="ch-avatar" src="https://i.pravatar.cc/150?img=11" alt="">
+                <div>
+                    <div class="comment-author"><span class="name">Dev in Progress</span><span class="time">1 day ago</span></div>
+                    <p class="comment-text">Great video. It'd be awesome if you did a follow-up on turning this Figma file into working React code.</p>
+                    <div class="comment-actions">
+                        <button>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-9.5A2.5 2.5 0 0 0 19.5 8h-5.8l.9-4.6a1.6 1.6 0 0 0-1.6-1.9L12 1 5.4 8.6A2 2 0 0 0 5 10v8a2 2 0 0 0 2 2h10.5a2.5 2.5 0 0 0 2.5-2 2.5 2.5 0 0 0 .8-1.8V10.5z"/></svg>
+                            301
+                        </button>
+                        <button>Reply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <aside class="watch-column">
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/figma3/336/189" alt="">
+                    <span class="duration">9:27</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">Design Systems 101: Tokens, Components, and Variants</h3>
+                    <div class="upnext-channel">Figma Weekly</div>
+                    <div class="upnext-stats">1.5M views • 3 days ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/figma2/336/189" alt="">
+                    <span class="duration">18:02</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">UI Design Trends 2026 — What's Hot in Interfaces</h3>
+                    <div class="upnext-channel">Design Course</div>
+                    <div class="upnext-stats">845K views • 5 days ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/figma4/336/189" alt="">
+                    <span class="duration">21:09</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">Prototyping Interactions in Figma: Smart Animate Guide</h3>
+                    <div class="upnext-channel">Figma Weekly</div>
+                    <div class="upnext-stats">1.1M views • 1 week ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/code1/336/189" alt="">
+                    <span class="duration">25:10</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">CSS Grid Masterclass — Layouts Without the Pain</h3>
+                    <div class="upnext-channel">PixelPerfect</div>
+                    <div class="upnext-stats">980K views • 1 week ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/figma5/336/189" alt="">
+                    <span class="duration">11:47</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">How I Built My Portfolio With Figma and React</h3>
+                    <div class="upnext-channel">Design Course</div>
+                    <div class="upnext-stats">655K views • 3 days ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/code2/336/189" alt="">
+                    <span class="duration">32:48</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">JavaScript Fundamentals Every Developer Must Know</h3>
+                    <div class="upnext-channel">UI Dev Academy</div>
+                    <div class="upnext-stats">1.9M views • 4 days ago</div>
+                </div>
+            </div>
+
+            <div class="upnext-card">
+                <a class="upnext-thumb" href="watch.html">
+                    <img src="https://picsum.photos/seed/game1/336/189" alt="">
+                    <span class="duration">1:02:14</span>
+                </a>
+                <div class="upnext-meta">
+                    <h3 class="upnext-title">Building UI Prototypes With Auto Layout in Figma</h3>
+                    <div class="upnext-channel">Design Course</div>
+                    <div class="upnext-stats">712K views • 6 days ago</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+</body>
+</html>
